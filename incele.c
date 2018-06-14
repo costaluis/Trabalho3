@@ -10,9 +10,10 @@ void eleadd(elemento *A){
 	scanf("%f",A->valor);
 }
 
-elemento* incele(elemento *A,int i){
-	if(i==0){
+elemento* incele(elemento *A,int *i){
+	if(*i==0){
 		eleadd(A);
+		*i=1;
 		return A;
 	}
 	else{
