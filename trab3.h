@@ -11,4 +11,6 @@ typedef struct elemento
 }elemento;
 
 int adicao(int *,int *);
-elemento* incele(elemento*, int *);
+elemento* incele(elemento*, int *,int,int);
+int remove(elemento *);
+void soma(elemento*, int, int);

@@ -28,7 +28,7 @@ void consulta(elemento *A,int maxlinha,int maxcoluna){
 	system("clear");
 	while(A!=NULL){
 		if(A->linha==linha && A->coluna==coluna){
-			printf("Valor do elemento: %.2f\n",A->valor);
+			printf("Valor do elemento: %f\n",A->valor);
 			return;
 		}else{
 			A = A->prox;

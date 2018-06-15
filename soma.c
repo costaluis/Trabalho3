@@ -31,7 +31,7 @@ void soma(elemento *A, int maxlinha, int maxcoluna){
 			soma += A->valor;
 			A = A->prox;
  		}
- 		printf("Resultado da soma: %.2f\n",soma);
+ 		printf("Resultado da soma: %f\n",soma);
 	}else{
 		while(1){
 			printf("Digite a coluna a ser somada: ");
@@ -46,6 +46,6 @@ void soma(elemento *A, int maxlinha, int maxcoluna){
 			soma += A->valor;
 			A = A->prox;
 		}
-		printf("Resultado da soma: %.2f\n",soma);
+		printf("Resultado da soma: %f\n",soma);
 	}
 }
