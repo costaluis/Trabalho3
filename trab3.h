@@ -14,3 +14,4 @@ int adicao(int *,int *);
 elemento* incele(elemento*, int *,int,int);
 int remove(elemento *);
 void soma(elemento*, int, int);
+void consulta(elemento*,int,int);
