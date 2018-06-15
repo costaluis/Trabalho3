@@ -1,6 +1,6 @@
 #include "trab3.h"
 
-int remove(elemento *A){
+int rem(elemento *A){
 	elemento *B;
 	while(A!=NULL){
 		B = A;

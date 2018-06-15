@@ -3,7 +3,6 @@
 int main(int argc, char const *argv[])
 {
 	int matriz = 0;
-	char c;
 	int opcao;
 	int linhas;
 	int colunas;
@@ -19,47 +18,65 @@ int main(int argc, char const *argv[])
 		printf("3 - Incluir elemento\n");
 		printf("4 - Consultar elemento\n");
 		printf("5 - Fechar programa\n");
-		scanf("%d",opcao);
+		scanf("%d",&opcao);
 		switch(opcao){
 			case 1:
 				if(matriz == 0){
 					matriz = adicao(&linhas,&colunas);
 					printf("Tecle enter para continuar...\n");
-					getchar(c);
+					__fpurge(stdin);
+					getchar();
 				}else{
 					printf("Matriz ja criada!\n");
 					printf("Tecle enter para continuar...\n");
-					getchar(c);
+					getchar();
 				}
+				break;
 			case 2:
 				if(matriz == 1){
-					matriz = remove(A);
+					matriz = rem(A);
 					printf("Tecle enter para continuar...\n");
-					getchar(c);
+					getchar();
 				}else{
 					printf("Matriz nao existente!\n");
 					printf("Tecle enter para continuar...\n");
-					getchar(c);
+					getchar();
 				}
+				break;
 			case 3:
-				B = incele(B,i,linhas,colunas);
-				printf("Tecle enter para continuar...\n");
-				getchar(c);
+				if(matriz==1){
+					B = incele(B,&i,linhas,colunas);
+					printf("Tecle enter para continuar...\n");
+					getchar();
+				}else{
+					printf("Matriz nao existente!\n");
+					printf("Tecle enter para continuar...\n");
+					getchar();
+				}
+				break;
 			case 4:
-				consulta(A,linhas,colunas);
-				printf("Tecle enter para continuar...\n");
-				getchar(c);
+				if(matriz==1){
+					consulta(A,linhas,colunas);
+					printf("Tecle enter para continuar...\n");
+					getchar();
+				}else{
+					printf("Matriz nao existente!\n");
+					printf("Tecle enter para continuar...\n");
+					getchar();
+				}
+				break;
 			case 5:
 				if(matriz == 1){
-					matriz = remove(A);
+					matriz = rem(A);
 					return 0;
 				}else{
 					return 0;
 				}
+				break;
 			default:
 				printf("Valor Invalido!\n");
 				printf("Tecle enter para continuar...\n");
-				getchar(c);
+				getchar();
 		}
 	}
 }

@@ -4,7 +4,7 @@ void eleadd(elemento *A,int maxlinha,int maxcoluna){
 	system("clear");
 	while(1){
 		printf("Insira a linha do elemento: ");
-		scanf("%d",A->linha);
+		scanf("%d",&A->linha);
 		if(A->linha>=0 && A->linha<maxlinha){
 			break;
 		}else{
@@ -14,7 +14,7 @@ void eleadd(elemento *A,int maxlinha,int maxcoluna){
 	system("clear");
 	while(1){
 		printf("Insira a coluna do elemento: ");
-		scanf("%d",A->coluna);
+		scanf("%d",&A->coluna);
 		if(A->coluna>=0 && A->coluna<maxcoluna){
 			break;
 		}else{
@@ -22,7 +22,7 @@ void eleadd(elemento *A,int maxlinha,int maxcoluna){
 		}
 	}	
 	printf("Insira o valor do elemento: ");
-	scanf("%f",A->valor);
+	scanf("%f",&A->valor);
 }
 
 elemento* incele(elemento *A,int *i,int maxlinha,int maxcoluna){

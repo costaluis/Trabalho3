@@ -10,7 +10,7 @@ void soma(elemento *A, int maxlinha, int maxcoluna){
 		printf("1 - Linha\n");
 		printf("2 - Coluna\n");
 		scanf("%d",&r);
-		if(r==1 ׀׀ r==2){
+		if(r==1 || r==2){
 			break;
 		}else{
 			printf("Valor Invalido!\n");

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdio_ext.h>
 
 typedef struct elemento
 {
@@ -12,6 +13,6 @@ typedef struct elemento
 
 int adicao(int *,int *);
 elemento* incele(elemento*, int *,int,int);
-int remove(elemento *);
+int rem(elemento *);
 void soma(elemento*, int, int);
 void consulta(elemento*,int,int);
