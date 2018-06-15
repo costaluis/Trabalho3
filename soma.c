@@ -28,7 +28,9 @@ void soma(elemento *A, int maxlinha, int maxcoluna){
 			}
 		}
 		while(A!=NULL){
-			soma += A->valor;
+			if(linha==A->linha){
+				soma += A->valor;
+			}
 			A = A->prox;
  		}
  		printf("Resultado da soma: %f\n",soma);
@@ -43,7 +45,9 @@ void soma(elemento *A, int maxlinha, int maxcoluna){
 			}
 		}
 		while(A!=NULL){
-			soma += A->valor;
+			if(coluna == A->coluna){
+				soma += A->valor;
+			}
 			A = A->prox;
 		}
 		printf("Resultado da soma: %f\n",soma);

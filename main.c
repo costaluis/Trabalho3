@@ -17,7 +17,8 @@ int main(int argc, char const *argv[])
 		printf("2 - Remover matriz\n");
 		printf("3 - Incluir elemento\n");
 		printf("4 - Consultar elemento\n");
-		printf("5 - Fechar programa\n");
+		printf("5 - Somar linha/coluna\n");
+		printf("6 - Fechar programa\n");
 		scanf("%d",&opcao);
 		switch(opcao){
 			case 1:
@@ -57,6 +58,15 @@ int main(int argc, char const *argv[])
 				}
 				break;
 			case 5:
+				if(matriz==1){
+					soma(A,linhas,colunas);
+					pausa();
+				}else{
+					printf("Matriz nao existente!\n");
+					pausa();
+				}
+				break;
+			case 6:
 				if(matriz == 1){
 					matriz = rem(A);
 					return 0;
