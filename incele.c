@@ -21,6 +21,7 @@ void eleadd(elemento *A,int maxlinha,int maxcoluna){
 			printf("Valor Invalido!\n");
 		}
 	}	
+	system("clear");
 	printf("Insira o valor do elemento: ");
 	scanf("%f",&A->valor);
 }

@@ -23,46 +23,37 @@ int main(int argc, char const *argv[])
 			case 1:
 				if(matriz == 0){
 					matriz = adicao(&linhas,&colunas);
-					printf("Tecle enter para continuar...\n");
-					__fpurge(stdin);
-					getchar();
+					pausa();
 				}else{
 					printf("Matriz ja criada!\n");
-					printf("Tecle enter para continuar...\n");
-					getchar();
+					pausa();
 				}
 				break;
 			case 2:
 				if(matriz == 1){
 					matriz = rem(A);
-					printf("Tecle enter para continuar...\n");
-					getchar();
+					pausa();
 				}else{
 					printf("Matriz nao existente!\n");
-					printf("Tecle enter para continuar...\n");
-					getchar();
+					pausa();
 				}
 				break;
 			case 3:
 				if(matriz==1){
 					B = incele(B,&i,linhas,colunas);
-					printf("Tecle enter para continuar...\n");
-					getchar();
+					pausa();
 				}else{
 					printf("Matriz nao existente!\n");
-					printf("Tecle enter para continuar...\n");
-					getchar();
+					pausa();
 				}
 				break;
 			case 4:
 				if(matriz==1){
 					consulta(A,linhas,colunas);
-					printf("Tecle enter para continuar...\n");
-					getchar();
+					pausa();
 				}else{
 					printf("Matriz nao existente!\n");
-					printf("Tecle enter para continuar...\n");
-					getchar();
+					pausa();
 				}
 				break;
 			case 5:
@@ -75,8 +66,7 @@ int main(int argc, char const *argv[])
 				break;
 			default:
 				printf("Valor Invalido!\n");
-				printf("Tecle enter para continuar...\n");
-				getchar();
+				pausa();
 		}
 	}
 }

@@ -16,3 +16,4 @@ elemento* incele(elemento*, int *,int,int);
 int rem(elemento *);
 void soma(elemento*, int, int);
 void consulta(elemento*,int,int);
+void pausa();
